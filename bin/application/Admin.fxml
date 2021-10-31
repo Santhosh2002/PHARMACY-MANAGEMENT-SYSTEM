@@ -102,12 +102,7 @@
                               <Font name="Verdana" size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutY="376.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
-                           <font>
-                              <Font name="Verdana" size="14.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="20.0" layoutY="375.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
+                        <Button layoutX="26.0" layoutY="376.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>

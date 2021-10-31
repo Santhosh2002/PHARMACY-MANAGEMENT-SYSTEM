@@ -1,7 +1,5 @@
 package application;
 
-import java.io.IOException;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -14,25 +12,34 @@ import java.util.logging.Logger;
 import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
+
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
-import javafx.stage.Popup;
-import javafx.stage.Stage;
+
 import javafx.util.Duration;
 
 
 public class Controller {
 	Connection con;
+    void createconnection() {
+	
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/PHARMACYDB","root","$@i&@nt#O$hMy1");
+			System.out.println("Connected");
+			
+			
+		} catch (ClassNotFoundException | SQLException ex) {
+			
+			Logger.getLogger(Pharmacy.class.getName()).log(Level.SEVERE,null,ex);
+		}
+	}
 	Pane view;
 	@FXML
 	public BorderPane borderpane; 
@@ -74,6 +81,7 @@ public class Controller {
 	private DatePicker DOB;
 	@FXML
 	private Label label;
+	
 	@FXML
 	private void Reset(ActionEvent e) {
 		F_name.setText("");
@@ -111,10 +119,12 @@ public class Controller {
 	 				
 	 			e.printStackTrace();
 	 		}
+	    	 
 	         label.setText("Signup Successfull");
 	         PauseTransition pause = new PauseTransition(Duration.seconds(2));
 	    	 pause.setOnFinished(e -> label.setText(null));
 	    	 pause.play();
+	    	 
 	     }
 	     else {
 	    	 label.setText("Invalid Input Found");
@@ -157,8 +167,10 @@ public class Controller {
 				User_id =  rs.getInt(1);
 				
 			}
-			if(User_id == 1 || User_id ==2 || User_id <= 25) {
+			if(User_id == 1 || User_id == 2 ) {
+				
 				label1.setText("Signin Successfull");
+				
 				PauseTransition pause = new PauseTransition(Duration.seconds(2));
 		    	pause.setOnFinished(e -> label.setText(null));
 		    	pause.play();
@@ -177,18 +189,6 @@ public class Controller {
 		}
         
 	}
-void createconnection() {
-		
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/PHARMACYDB","root","$@i&@nt#O$hMy1");
-			System.out.println("Connected");
-			
-			
-		} catch (ClassNotFoundException | SQLException ex) {
-			
-			Logger.getLogger(Pharmacy.class.getName()).log(Level.SEVERE,null,ex);
-		}
-	}
+
 }
 
