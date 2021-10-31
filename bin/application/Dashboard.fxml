@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="650.0" minWidth="1125.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dacb9" height="100.0" layoutX="60.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1005.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f5affd6" height="180.0" layoutX="60.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e761b" height="180.0" layoutX="410.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bf1313" height="180.0" layoutX="765.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff6921d6" height="180.0" layoutX="60.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#99174fd6" height="180.0" layoutX="410.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Text fill="WHITE" layoutX="101.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning, Administrator !">
+         <font>
+            <Font name="Calibri Bold" size="60.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
