@@ -53,9 +53,9 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Text>
-            <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="25.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="68.0" fitWidth="70.0" layoutX="24.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@image%20(1).png" />
+                  <Image url="@logo-removebg-preview.png" />
                </image>
             </ImageView>
          </children>

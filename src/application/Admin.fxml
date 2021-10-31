@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -93,45 +92,46 @@
                               <Font name="System Bold" size="24.0" />
                            </font>
                         </Text>
-                        <MenuButton layoutX="29.0" layoutY="278.0" minHeight="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="226.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
+                        <Button layoutX="20.0" layoutY="275.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>
-                        </MenuButton>
-                        <MenuButton layoutX="29.0" layoutY="328.0" minHeight="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="226.0" style="-fx-background-color: #202020;" text="MANAGE PHARMICIST" textFill="WHITE">
+                        </Button>
+                        <Button layoutX="20.0" layoutY="325.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MANAGE PHARMACIST" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>
-                           <items>
-                              <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                              <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                           </items>
-                        </MenuButton>
-                        <MenuButton layoutX="29.0" layoutY="379.0" minHeight="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="226.0" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
+                        </Button>
+                        <Button layoutY="376.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>
-                        </MenuButton>
-                        <MenuButton layoutX="29.0" layoutY="433.0" minHeight="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="226.0" style="-fx-background-color: #202020;" text="MANAGE MEDICINE" textFill="WHITE">
+                        </Button>
+                        <Button layoutX="20.0" layoutY="375.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>
-                        </MenuButton>
-                        <MenuButton layoutX="29.0" layoutY="485.0" minHeight="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="226.0" style="-fx-background-color: #202020;" text="BOOK MEDICINE LIST" textFill="WHITE">
+                        </Button>
+                        <Button layoutX="20.0" layoutY="425.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MANAGE MEDICINE" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>
-                        </MenuButton>
-                        <MenuButton layoutX="29.0" layoutY="598.0" minHeight="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="226.0" style="-fx-background-color: #202020;" text="EXIT" textFill="WHITE">
+                        </Button>
+                        <Button layoutX="20.0" layoutY="475.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="ORDERED MEDICINE LIST" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>
-                        </MenuButton>
-                        <MenuButton layoutX="31.0" layoutY="542.0" minHeight="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="226.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
+                        </Button>
+                        <Button layoutX="20.0" layoutY="525.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
                            <font>
                               <Font name="Verdana" size="14.0" />
                            </font>
-                        </MenuButton>
+                        </Button>
+                        <Button layoutX="20.0" layoutY="575.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="EXIT" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
                      </children></AnchorPane>
                </children>
             </VBox>

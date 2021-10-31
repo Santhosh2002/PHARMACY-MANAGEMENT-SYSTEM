@@ -30,7 +30,7 @@ public class Pharmacy extends Application {
 			borderpane = loader.load();
 			Scene scene = new Scene(borderpane);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			Image icon = new Image("image (1).png");
+			Image icon = new Image("logo-removebg-preview.png");
 			Controller mwc = loader.getController();
 			
 			FxmlLoader object = new FxmlLoader();
