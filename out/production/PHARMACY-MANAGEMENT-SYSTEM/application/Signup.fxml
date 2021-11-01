@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="605.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="1400.0" pickOnBounds="true">
+         <image>
+            <Image url="@image5.jpg" />
+         </image>
+      </ImageView>
+      <Text id="Text2" fill="#0a1487ed" layoutX="55.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO">
+         <font>
+            <Font name="Verdana Bold Italic" size="60.0" />
+         </font>
+      </Text>
+      <Text id="Text3" fill="#0b177dba" layoutX="185.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Pharmacy">
+         <font>
+            <Font name="Verdana Bold Italic" size="50.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="586.0" layoutX="815.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="550.0" />
+      <Text layoutX="845.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="845.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="1111.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <TextField id="F_name" fx:id="F_name" layoutX="845.0" layoutY="65.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="Steve">
+         <font>
+            <Font name="Verdana Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField id="L_name" fx:id="L_name" layoutX="1113.0" layoutY="65.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="John">
+         <font>
+            <Font name="Verdana Italic" size="16.0" />
+         </font>
+      </TextField>
+      <DatePicker id="DOB" fx:id="DOB" layoutX="845.0" layoutY="324.0" minHeight="40.0" minWidth="100.0" promptText="01/01/1000" />
+      <TextField id="Email" fx:id="Email" layoutX="845.0" layoutY="148.0" minHeight="40.0" minWidth="450.0" prefHeight="40.0" prefWidth="408.0" promptText="Sample@examle.com">
+         <font>
+            <Font name="Verdana Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="845.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passward :">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <TextField id="Passward" fx:id="Passward" layoutX="845.0" layoutY="235.0" minHeight="40.0" minWidth="450.0" prefHeight="40.0" prefWidth="408.0" promptText="Sample#1234">
+         <font>
+            <Font name="Verdana Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="845.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth :">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="1113.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number :">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <TextField id="M_num" fx:id="M_num" layoutX="1113.0" layoutY="324.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="987654321">
+         <font>
+            <Font name="Verdana Italic" size="16.0" />
+         </font>
+      </TextField>
+      <Text layoutX="843.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <TextArea id="Address" fx:id="Address" layoutX="845.0" layoutY="411.0" prefHeight="91.0" prefWidth="450.0" promptText="H No: 00 , Street name , Colony , City ,State.">
+         <font>
+            <Font name="Verdana Italic" size="16.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="944.0" layoutY="515.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Signup" style="-fx-background-color: #CCFFE5;" text="SIGN UP">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="1164.0" layoutY="515.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Reset" style="-fx-background-color: #CCFFE5;" text="RESET">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="1026.0" layoutY="575.0" prefHeight="20.0" prefWidth="159.0" textFill="#09ff00">
+         <font>
+            <Font name="Verdana Italic" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="145.0" layoutX="150.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="406.0" />
+      <Text layoutX="188.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already Have an Account ?">
+         <font>
+            <Font name="Verdana Bold" size="22.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccffe5" height="82.0" layoutX="223.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="252.0" />
+      <Text layoutX="251.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on Signin button">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="321.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Above">
+         <font>
+            <Font name="Verdana Bold Italic" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
