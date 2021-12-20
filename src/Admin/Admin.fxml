@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderpane" minHeight="750.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+   <top>
+      <AnchorPane minHeight="100.0" minWidth="1400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1400.0">
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.08333329991860816" endY="0.9128787571733649" startX="0.5530302958054976" startY="0.9053030068224127">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.07058823853731155" green="0.30588236451148987" blue="0.4941176474094391" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Text id="Text1" fill="WHITE" layoutX="100.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHARMACY MANAGEMENT SYSTEM">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="30.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo.png" />
+               </image>
+            </ImageView>
+            <Text id="Text1" fill="WHITE" layoutX="1170.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="1246.0" layoutY="28.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: 1565C0;" text="My Profile" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane minWidth="275.0" prefHeight="651.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333131" height="675.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="25.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/admin2.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="29.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMINISTRATOR" wrappingWidth="213.1830654144287">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="25.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="DASHBOARD" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="340.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowManageP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="MANAGE PHARMACIST" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="395.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="MANAGE MEDICINE" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="450.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="MANAGE TRANSPORT" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="505.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="ORDERED MEDICINE LIST" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="560.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowHome" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="LOG OUT" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="615.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="EXIT APPLICATION" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

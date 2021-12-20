@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="605.0" minWidth="1400.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="1400.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/Background1.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="borderpane1" minHeight="605.0" minWidth="1400.0" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane minHeight="605.0" minWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text id="Text2" fill="#0a1487ed" layoutX="55.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="60.0" />
+                     </font>
+                  </Text>
+                  <Text id="Text3" fill="#0b177dba" layoutX="185.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Pharmacy">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <AnchorPane minHeight="605.0" minWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="368.0" layoutY="442.0" onMouseClicked="#Chat" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/doctorBot.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

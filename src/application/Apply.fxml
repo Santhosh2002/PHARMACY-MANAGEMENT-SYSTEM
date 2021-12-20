@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="605.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane minHeight="605.0" minWidth="1400.0" prefHeight="605.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <ImageView fitHeight="605.0" fitWidth="1400.0" pickOnBounds="true">
          <image>
@@ -46,23 +46,23 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextField id="F_name" fx:id="F_name" layoutX="845.0" layoutY="65.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="Steve">
+      <TextField id="F_name" fx:id="F_nameP" layoutX="845.0" layoutY="65.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="Steve">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <TextField id="L_name" fx:id="L_name" layoutX="1113.0" layoutY="65.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="John">
+      <TextField id="L_name" fx:id="L_nameP" layoutX="1113.0" layoutY="65.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="John">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <DatePicker id="DOB" fx:id="DOB" layoutX="845.0" layoutY="324.0" minHeight="40.0" minWidth="100.0" promptText="01/01/1000" />
-      <TextField id="Email" fx:id="Email" layoutX="845.0" layoutY="148.0" minHeight="40.0" minWidth="450.0" prefHeight="40.0" prefWidth="408.0" promptText="Sample@examle.com">
+      <DatePicker id="DOB" fx:id="DOBP" layoutX="845.0" layoutY="324.0" minHeight="40.0" minWidth="100.0" promptText="01/01/1000" />
+      <TextField id="Email" fx:id="EmailP" layoutX="845.0" layoutY="148.0" minHeight="40.0" minWidth="450.0" prefHeight="40.0" prefWidth="408.0" promptText="Username@Pharmacy.in">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="Password2" layoutX="845.0" layoutY="235.0" minHeight="40.0" minWidth="450.0" promptText="Sample#123">
+      <PasswordField fx:id="Password2P" layoutX="845.0" layoutY="235.0" minHeight="40.0" minWidth="450.0" promptText="Sample#123">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
@@ -82,32 +82,32 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextField id="M_num" fx:id="M_num" layoutX="1113.0" layoutY="324.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="987654321">
+      <TextField id="M_num" fx:id="M_numP" layoutX="1113.0" layoutY="324.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="987654321">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <Text layoutX="843.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+      <Text layoutX="843.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qualifications:">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextArea id="Address" fx:id="Address" layoutX="845.0" layoutY="411.0" prefHeight="91.0" prefWidth="450.0" promptText="H No: 00 , Street name , Colony , City ,State.">
+      <TextArea id="Address" fx:id="QualificationP" layoutX="845.0" layoutY="411.0" prefHeight="91.0" prefWidth="450.0" promptText="B-Pharmacy , MPharmacy etc,.">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextArea>
-      <Button layoutX="944.0" layoutY="515.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Signup" style="-fx-background-color: #CCFFE5;" text="SIGN UP">
+      <Button layoutX="944.0" layoutY="515.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Apply" style="-fx-background-color: #CCFFE5;" text="APPLY">
          <font>
             <Font name="Verdana Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="1164.0" layoutY="515.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Reset" style="-fx-background-color: #CCFFE5;" text="RESET">
+      <Button layoutX="1164.0" layoutY="515.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Reset2" style="-fx-background-color: #CCFFE5;" text="RESET">
          <font>
             <Font name="Verdana Bold" size="14.0" />
          </font>
       </Button>
-      <Label fx:id="label" layoutX="1026.0" layoutY="575.0" prefHeight="20.0" prefWidth="159.0" textFill="#09ff00">
+      <Label fx:id="label" layoutX="1004.0" layoutY="571.0" prefHeight="20.0" prefWidth="330.0" textFill="#09ff00">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>

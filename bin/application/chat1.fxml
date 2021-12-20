@@ -15,7 +15,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#435186" height="62.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
       <ScrollPane layoutY="62.0" prefHeight="444.0" prefWidth="400.0">
          <content>
-            <ImageView fitHeight="442.0" fitWidth="398.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="442.0" fitWidth="398.0" pickOnBounds="true" />
          </content></ScrollPane>
       <Button layoutX="322.0" layoutY="517.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" text="Send">
          <font>
@@ -32,7 +32,7 @@
       </Text>
       <ImageView fitHeight="56.0" fitWidth="64.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@image-removebg-preview.png" />
+            <Image url="@../Images/doctorBot.png" />
          </image>
       </ImageView>
    </children>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="750.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane minHeight="750.0" minWidth="1400.0">
+         <center>
+            <AnchorPane minWidth="840.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane minHeight="100.0" minWidth="1400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1400.0">
+                     <fill>
+                        <LinearGradient cycleMethod="REFLECT" endX="0.037878752657861364" endY="0.9356060262882349" startX="0.5151515440507368" startY="0.9431817947012006">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.32967835664749146" green="0.04385964944958687" blue="0.7894737124443054" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.4343999922275543" green="0.024000000208616257" blue="0.47999998927116394" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <ImageView fitHeight="79.0" fitWidth="74.0" layoutX="14.0" layoutY="9.0">
+                     <image>
+                        <Image url="@../Images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="Text1" fill="WHITE" layoutX="100.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHARMACY MANAGEMENT SYSTEM">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text id="Text1" fill="WHITE" layoutX="1293.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+         </top>
+         <right>
+            <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane minWidth="275.0" prefHeight="651.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3b3b3b" height="675.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
+                        <Text fill="WHITE" layoutX="29.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" textAlignment="CENTER" wrappingWidth="213.1830654144287">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Button contentDisplay="CENTER" layoutX="43.0" layoutY="290.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" layoutX="43.0" layoutY="341.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #202020;" text="MY ORDERS" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" layoutX="44.0" layoutY="392.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #202020;" text="MEDICINES" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" layoutX="46.0" layoutY="443.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #202020;" text="EQUIPMENTS" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" layoutX="44.0" layoutY="495.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" layoutX="44.0" layoutY="547.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #202020;" text="EXIT" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="29.0" layoutY="31.0" nodeOrientation="RIGHT_TO_LEFT">
+                           <image>
+                              <Image url="@../Images/user1.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="750.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane minHeight="750.0" minWidth="1400.0">
+         <top>
+            <AnchorPane minHeight="100.0" minWidth="1400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1400.0">
+                     <fill>
+                        <LinearGradient cycleMethod="REFLECT" endX="0.037878752657861364" endY="0.9356060262882349" startX="0.5151515440507368" startY="0.9431817947012006">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.32967835664749146" green="0.04385964944958687" blue="0.7894737124443054" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.365200012922287" green="0.8299999833106995" blue="0.5759627223014832" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Text id="Text1" fill="WHITE" layoutX="100.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHARMACY MANAGEMENT SYSTEM">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="30.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="Text1" fill="WHITE" layoutX="1253.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacist">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+         </top>
+         <right>
+            <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane minHeight="0.0" minWidth="0.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane minWidth="275.0" prefHeight="651.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4c25a" height="675.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
+                        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="54.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/pharmacist1.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="47.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHARMACIST" wrappingWidth="213.1830654144287">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="25.0" layoutY="265.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="25.0" layoutY="318.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCKS" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="25.0" layoutY="371.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="SALES" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="25.0" layoutY="422.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="NET PROFIT" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="25.0" layoutY="472.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="ONLINE ORDERING" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="25.0" layoutY="570.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="25.0" layoutY="621.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXIT APPLICATION" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="25.0" layoutY="520.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="ONLINE ORDERING" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane minHeight="650.0" minWidth="1125.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dacb9" height="100.0" layoutX="60.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1005.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f5affd6" height="180.0" layoutX="60.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e761b" height="180.0" layoutX="410.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bf1313" height="180.0" layoutX="765.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff6921d6" height="180.0" layoutX="60.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#99174fd6" height="180.0" layoutX="410.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+                  <Text fill="WHITE" layoutX="101.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning, Pharmacist !">
+                     <font>
+                        <Font name="Calibri Bold" size="60.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
