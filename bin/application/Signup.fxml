@@ -30,18 +30,18 @@
             <Font name="Verdana Bold Italic" size="50.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="586.0" layoutX="815.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="550.0" />
-      <Text layoutX="845.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="586.0" layoutX="815.0" layoutY="13.0" stroke="#0c3d6b" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="550.0" />
+      <Text fill="#0c3d6b" layoutX="845.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="845.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
+      <Text fill="#0c3d6b" layoutX="845.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="1111.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
+      <Text fill="#0c3d6b" layoutX="1111.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -67,17 +67,17 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </PasswordField>
-      <Text layoutX="845.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+      <Text fill="#0c3d6b" layoutX="845.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="845.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth :">
+      <Text fill="#0c3d6b" layoutX="845.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="1113.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number :">
+      <Text fill="#0c3d6b" layoutX="1113.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -87,7 +87,7 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <Text layoutX="843.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+      <Text fill="#0c3d6b" layoutX="843.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -119,12 +119,12 @@
          </font>
       </Text>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccffe5" height="82.0" layoutX="223.0" layoutY="457.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="252.0" />
-      <Text layoutX="251.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on Signin button">
+      <Text fill="#0c3d6b" layoutX="251.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on Signin button">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="321.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Above">
+      <Text fill="#0c3d6b" layoutX="321.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Above">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>

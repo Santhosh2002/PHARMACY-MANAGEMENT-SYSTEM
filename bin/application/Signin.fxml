@@ -19,7 +19,7 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="300.0" layoutX="54.0" layoutY="271.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="549.0" />
-      <Text layoutX="84.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
+      <Text fill="#0c3d6b" layoutX="84.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -28,7 +28,7 @@
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font></TextField>
-      <Text layoutX="84.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+      <Text fill="#0c3d6b" layoutX="84.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -55,12 +55,12 @@
          </font>
       </Text>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccffe5" height="73.0" layoutX="944.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="312.0" />
-      <Text layoutX="958.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on Signup or Apply button">
+      <Text fill="#0c3d6b" layoutX="958.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on Signup or Apply button">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="1072.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Above">
+      <Text fill="#0c3d6b" layoutX="1072.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Above">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>

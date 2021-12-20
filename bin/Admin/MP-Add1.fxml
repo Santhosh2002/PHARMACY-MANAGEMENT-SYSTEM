@@ -12,7 +12,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="590.0" minWidth="1125.0" style="-fx-background-color: #dce2e7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
    <children>
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#84b2d1" height="545.0" layoutX="60.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="672.0" />
-      <Text fill="#144263" layoutX="87.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
+      <Text fill="#0c3d6b" layoutX="87.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -22,7 +22,7 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <Text fill="#144263" layoutX="410.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
+      <Text fill="#0c3d6b" layoutX="410.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -32,7 +32,7 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <Text fill="#144263" layoutX="87.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
+      <Text fill="#0c3d6b" layoutX="87.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -42,13 +42,13 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <Text fill="#144263" layoutX="87.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth :">
+      <Text fill="#0c3d6b" layoutX="87.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
       <DatePicker id="DOB" fx:id="DOB" layoutX="87.0" layoutY="302.0" minHeight="40.0" minWidth="100.0" promptText="01/01/1000" />
-      <Text fill="#144263" layoutX="410.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number :">
+      <Text fill="#0c3d6b" layoutX="410.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -58,7 +58,7 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <Text fill="#144263" layoutX="87.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+      <Text fill="#0c3d6b" layoutX="87.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
@@ -79,7 +79,7 @@
          </font>
       </Button>
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#2fc9d4" height="72.0" layoutX="774.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="281.0" />
-      <Text fill="#144263" layoutX="789.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD PHARMACIST" wrappingWidth="249.7735595703125">
+      <Text fill="#0c3d6b" layoutX="789.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD PHARMACIST" wrappingWidth="249.7735595703125">
          <font>
             <Font name="Verdana Bold" size="23.0" />
          </font>

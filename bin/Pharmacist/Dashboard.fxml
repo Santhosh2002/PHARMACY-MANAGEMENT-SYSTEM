@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="650.0" minWidth="1125.0" style="-fx-background-color: #dce2e7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#9dacb9" height="100.0" layoutX="60.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1005.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#3d8bc7d6" height="180.0" layoutX="60.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1fa42ac9" height="180.0" layoutX="410.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#bf4646" height="180.0" layoutX="765.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ff6921d6" height="180.0" layoutX="60.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#c7be23d6" height="180.0" layoutX="410.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Text fill="WHITE" layoutX="101.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning, Administrator !">
+         <font>
+            <Font name="Calibri Bold" size="60.0" />
+         </font>
+      </Text>
+      <Text fill="#fafcff" layoutX="91.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffffffd6" height="180.0" layoutX="765.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+      <Text fill="#4d5e76" layoutX="794.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#4d5e76" layoutX="436.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#fafcff" layoutX="787.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#4d5e76" layoutX="436.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#fafcff" layoutX="91.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

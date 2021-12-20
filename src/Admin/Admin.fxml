@@ -50,16 +50,11 @@
                   <Image url="@../Images/logo.png" />
                </image>
             </ImageView>
-            <Text id="Text1" fill="WHITE" layoutX="1170.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+            <Text id="Text1" fill="WHITE" layoutX="1263.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
                <font>
-                  <Font name="System Bold" size="20.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Text>
-            <Button layoutX="1246.0" layoutY="28.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: 1565C0;" text="My Profile" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
          </children>
       </AnchorPane>
    </top>
@@ -74,7 +69,7 @@
          <children>
             <AnchorPane minWidth="275.0" prefHeight="651.0">
                <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333131" height="675.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="675.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
                   <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="25.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/admin2.png" />
@@ -85,37 +80,37 @@
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="25.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="DASHBOARD" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="340.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowManageP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="MANAGE PHARMACIST" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="340.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowManageP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MANAGE PHARMACIST" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="395.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="MANAGE MEDICINE" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="395.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MANAGE MEDICINE" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="450.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="MANAGE TRANSPORT" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="450.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="505.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="ORDERED MEDICINE LIST" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="505.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="BOOKED MEDICINES" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="560.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowHome" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="LOG OUT" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="560.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowHome" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="615.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #1b1717;" text="EXIT APPLICATION" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="615.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXIT " textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>

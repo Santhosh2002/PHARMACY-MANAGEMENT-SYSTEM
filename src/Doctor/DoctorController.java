@@ -1,4 +1,4 @@
-package User;
+package Doctor;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class UserController {
+public class DoctorController {
 	private Stage stage;
 	@FXML
 	private BorderPane borderpane; 
@@ -40,5 +40,4 @@ public class UserController {
 		stage.show();
 		stage.setResizable(false);
 	}
-
 }

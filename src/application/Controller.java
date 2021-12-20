@@ -9,7 +9,6 @@ import java.sql.Statement;
 import java.time.LocalDate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,24 +22,23 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
-
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import Admin.*;
+import Doctor.*;
+import Pharmacist.*;
+import User.*;
 import javafx.scene.*;
+
 public class Controller extends Pharmacy{
 	
 	private Stage stage;
-	private Scene scene;
-	private Parent root;	
 	@FXML
 	public BorderPane borderpane; 
 	@FXML
 	public BorderPane borderpane1; 
-
 	@FXML
 	private Label label1;
 	@FXML
@@ -56,6 +54,7 @@ public class Controller extends Pharmacy{
 	@FXML
 	private Label label2;
 	Connection con;
+	
     void createconnection() {
 	
 		try {
@@ -147,7 +146,6 @@ public class Controller extends Pharmacy{
 				         PauseTransition pause = new PauseTransition(Duration.seconds(2));
 				    	 pause.setOnFinished(e -> label.setText(null));
 				    	 pause.play();
-						
 					}
 					
 					else{
@@ -194,6 +192,26 @@ public class Controller extends Pharmacy{
 		
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("Dashboard");
+		((BorderPane) borderpane1).setCenter(view);
+		
+		stage.getIcons().add(icon);
+		stage.setScene(scene);
+		stage.show();
+		stage.setResizable(false);
+	}
+public void ShowDoctor(ActionEvent e) throws IOException {
+		
+    	Parent borderpane ;
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Doctor/User.fxml"));
+		borderpane = loader.load();
+		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Scene scene = new Scene(borderpane);
+//		scene.getStylesheets().add(getClass().getResource("/Admin/application.css").toExternalForm());
+		Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
+		
+		
+		FxmlLoader4 object = new FxmlLoader4();
+		view = object.getPage("Dashboard");
 		((BorderPane) borderpane).setCenter(view);
 		
 		stage.getIcons().add(icon);
@@ -212,9 +230,9 @@ public class Controller extends Pharmacy{
 		Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
 		
 		
-//		FxmlLoader1 object = new FxmlLoader1();
-//		view = object.getPage("Dashboard");
-//		((BorderPane) borderpane).setCenter(view);
+		FxmlLoader3 object = new FxmlLoader3();
+		view = object.getPage("Dashboard");
+		((BorderPane) borderpane).setCenter(view);
 		
 		stage.getIcons().add(icon);
 		stage.setScene(scene);
@@ -223,18 +241,17 @@ public class Controller extends Pharmacy{
 	}
     public void ShowUser(ActionEvent e) throws IOException {
 	
-	Parent borderpane ;
+	Parent borderpane1 ;
 	FXMLLoader loader = new FXMLLoader(getClass().getResource("/User/User.fxml"));
-	borderpane = loader.load();
+	borderpane1 = loader.load();
 	stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-	Scene scene = new Scene(borderpane);
+	Scene scene = new Scene(borderpane1);
 //	scene.getStylesheets().add(getClass().getResource("/Admin/application.css").toExternalForm());
 	Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
 	
-	
-//	FxmlLoader1 object = new FxmlLoader1();
-//	view = object.getPage("Dashboard");
-//	((BorderPane) borderpane).setCenter(view);
+	FxmlLoader2 object = new FxmlLoader2();
+	view = object.getPage("Dashboard");
+	((BorderPane) borderpane1).setCenter(view);
 	
 	stage.getIcons().add(icon);
 	stage.setScene(scene);
@@ -382,6 +399,15 @@ public class Controller extends Pharmacy{
 		    	pause.setOnFinished(e -> label1.setText(null));
 		    	pause.play();
 		    	ShowUser(event);
+
+			}
+            else if(User_id == 4) {
+				
+				label1.setText("Signin Successfull");
+				PauseTransition pause = new PauseTransition(Duration.seconds(3));
+		    	pause.setOnFinished(e -> label1.setText(null));
+		    	pause.play();
+		    	ShowDoctor(event);
 
 			}
 			else {
