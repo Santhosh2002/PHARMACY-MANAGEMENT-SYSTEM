@@ -34,28 +34,38 @@ import javafx.scene.*;
 
 public class Controller extends Pharmacy{
 	
+	@FXML
+	protected Label label;
+	@FXML
+	protected TextField F_name;
+	@FXML
+	protected TextField L_name; 
+	@FXML
+	protected TextField Email; 
+	@FXML
+	protected PasswordField Password; 
+	@FXML
+	protected PasswordField NPassword;
+	@FXML
+	protected PasswordField CPassword; 
+	@FXML
+	protected TextField M_num;
+	@FXML
+	protected TextArea Address; 
+	@FXML
+	protected TextArea QualificationP; 
+	@FXML
+	protected DatePicker DOB;
+	
 	private Stage stage;
 	@FXML
-	public BorderPane borderpane; 
+	private BorderPane borderpane; 
 	@FXML
-	public BorderPane borderpane1; 
-	@FXML
-	private Label label1;
-	@FXML
-	private TextField F_name1;
-	@FXML
-	private TextField L_name1; 
-	@FXML
-	private TextField Email1; 
-	@FXML
-	private PasswordField NPassword;
-	@FXML
-	private PasswordField CPassword; 
-	@FXML
-	private Label label2;
-	Connection con;
+	private BorderPane borderpane1; 
+	Pane view;
+	protected Connection con;
 	
-    void createconnection() {
+    protected void createconnection() {
 	
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -67,7 +77,7 @@ public class Controller extends Pharmacy{
 			Logger.getLogger(Pharmacy.class.getName()).log(Level.SEVERE,null,ex);
 		}
 	}
-	Pane view;
+	
 	
 	@FXML
 	private void ShowSignin(ActionEvent e) {
@@ -97,32 +107,18 @@ public class Controller extends Pharmacy{
 		view = object.getPage("Apply");
 		borderpane.setCenter(view);
 	}
+	
 	@FXML
-	private TextField F_name;
-	@FXML
-	private TextField L_name; 
-	@FXML
-	private TextField Email; 
-	@FXML
-	private PasswordField Password2; 
-	@FXML
-	private TextField M_num;
-	@FXML
-	private TextArea Address; 
-	@FXML
-	private DatePicker DOB;
-	@FXML
-	private void Reset(ActionEvent e) {
+	public void Reset(ActionEvent e) {
 		F_name.setText("");
 		L_name.setText("");
 		Email.setText("");
-		Password2.setText("");
+		Password.setText("");
 		M_num.setText("");
 		Address.setText("");
 		DOB.setValue(null );
 	}
-	@FXML
-	private Label label;
+
 	@FXML
 	private void Signup(ActionEvent event) {
 		 createconnection();
@@ -130,7 +126,7 @@ public class Controller extends Pharmacy{
 		 String val1 = F_name.getText();
 	     String val2 = L_name.getText();
 	     String val3 = Email.getText();
-	     String val4 = Password2.getText();
+	     String val4 = Password.getText();
 	     String val5 = M_num.getText();
 	     String val6 = Address.getText();
 	     LocalDate val7 = DOB.getValue();
@@ -187,27 +183,27 @@ public class Controller extends Pharmacy{
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		Scene scene = new Scene(borderpane);
 		scene.getStylesheets().add(getClass().getResource("/Admin/application.css").toExternalForm());
-		Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
+		Image icon = new Image("\\Images\\logo.png");
 		
 		
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("Dashboard");
-		((BorderPane) borderpane1).setCenter(view);
+		((BorderPane) borderpane).setCenter(view);
 		
 		stage.getIcons().add(icon);
 		stage.setScene(scene);
 		stage.show();
 		stage.setResizable(false);
 	}
-public void ShowDoctor(ActionEvent e) throws IOException {
+    public void ShowDoctor(ActionEvent e) throws IOException {
 		
     	Parent borderpane ;
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Doctor/User.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Doctor/Doctor.fxml"));
 		borderpane = loader.load();
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		Scene scene = new Scene(borderpane);
 //		scene.getStylesheets().add(getClass().getResource("/Admin/application.css").toExternalForm());
-		Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
+		Image icon = new Image("\\Images\\logo.png");
 		
 		
 		FxmlLoader4 object = new FxmlLoader4();
@@ -227,7 +223,7 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		Scene scene = new Scene(borderpane);
 //		scene.getStylesheets().add(getClass().getResource("/Admin/application.css").toExternalForm());
-		Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
+		Image icon = new Image("\\Images\\logo.png");
 		
 		
 		FxmlLoader3 object = new FxmlLoader3();
@@ -247,7 +243,7 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 	stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 	Scene scene = new Scene(borderpane1);
 //	scene.getStylesheets().add(getClass().getResource("/Admin/application.css").toExternalForm());
-	Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
+	Image icon = new Image("\\Images\\logo.png");
 	
 	FxmlLoader2 object = new FxmlLoader2();
 	view = object.getPage("Dashboard");
@@ -258,32 +254,18 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 	stage.show();
 	stage.setResizable(false);
 }
-	@FXML
-	private TextField F_nameP;
-	@FXML
-	private TextField L_nameP; 
-	@FXML
-	private TextField EmailP; 
-	@FXML
-	private PasswordField Password2P; 
-	@FXML
-	private TextField M_numP;
-	@FXML
-	private TextArea QualificationP; 
-	@FXML
-	private DatePicker DOBP;
 	
 	@FXML
-	private void Apply(ActionEvent event) {
+	public void Apply(ActionEvent event) {
 		 createconnection();
 		 
-		 String val1 = F_nameP.getText();
-	     String val2 = L_nameP.getText();
-	     String val3 = EmailP.getText();
-	     String val4 = Password2P.getText();
-	     String val5 = M_numP.getText();
+		 String val1 = F_name.getText();
+	     String val2 = L_name.getText();
+	     String val3 = Email.getText();
+	     String val4 = Password.getText();
+	     String val5 = M_num.getText();
 	     String val6 = QualificationP.getText();
-	     LocalDate val7 = DOBP.getValue();
+	     LocalDate val7 = DOB.getValue();
          if(val1 != null&&val2 != null&&val3 != null&&val4 != null&&val5 != null&&val6 != null&&val7 != null) {
 	    	 
 	    	 try {
@@ -332,33 +314,29 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 	     }
    }
 	@FXML
-	private void Reset2(ActionEvent e) {
-		F_nameP.setText("");
-		L_nameP.setText("");
-		EmailP.setText("");
-		Password2P.setText("");
-		M_numP.setText("");
+	public void Reset2(ActionEvent e) {
+		F_name.setText("");
+		L_name.setText("");
+		Email.setText("");
+		Password.setText("");
+		M_num.setText("");
 		QualificationP.setText("");
-		DOBP.setValue(null );
+		DOB.setValue(null );
 	}
-	@FXML
-	private void Chat(MouseEvent e) {
-		FxmlLoader object = new FxmlLoader();
-		view = object.getPage("chat1");
-		borderpane1.setRight(view);
+//	@FXML
+//	private void Chat(MouseEvent e) {
+//		FxmlLoader object = new FxmlLoader();
+//		view = object.getPage("chat1");
+//		borderpane1.setRight(view);
+//	}
 
-	}
-	@FXML
-	private TextField Userid;
-	@FXML
-	private PasswordField Password1;
 	@FXML
 	private void Signin(ActionEvent event) throws IOException {
 		
 		createconnection();
 		
-		String Var1 = Userid.getText();
-		String Var2 = Password1.getText();
+		String Var1 = Email.getText();
+		String Var2 = Password.getText();
 		
 		if (Var1 != null&&Var2 != null) {
 			int User_id = 0;
@@ -377,51 +355,51 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 			}
 			if(User_id == 1 ) {
 				
-				label1.setText("Signin Successfull");
+				label.setText("Signin Successfull");
 				PauseTransition pause = new PauseTransition(Duration.seconds(3));
-		    	pause.setOnFinished(e -> label1.setText(null));
+		    	pause.setOnFinished(e -> label.setText(null));
 		    	pause.play();
 		    	ShowAdmin(event);
 			}
 			else if(User_id == 2) {
 				
-				label1.setText("Signin Successfull");
+				label.setText("Signin Successfull");
 				PauseTransition pause = new PauseTransition(Duration.seconds(3));
-		    	pause.setOnFinished(e -> label1.setText(null));
+		    	pause.setOnFinished(e -> label.setText(null));
 		    	pause.play();
 		    	ShowPharmacist(event);
 
 			}
             else if(User_id == 3) {
 				
-				label1.setText("Signin Successfull");
+				label.setText("Signin Successfull");
 				PauseTransition pause = new PauseTransition(Duration.seconds(3));
-		    	pause.setOnFinished(e -> label1.setText(null));
+		    	pause.setOnFinished(e -> label.setText(null));
 		    	pause.play();
 		    	ShowUser(event);
 
 			}
             else if(User_id == 4) {
 				
-				label1.setText("Signin Successfull");
+				label.setText("Signin Successfull");
 				PauseTransition pause = new PauseTransition(Duration.seconds(3));
-		    	pause.setOnFinished(e -> label1.setText(null));
+		    	pause.setOnFinished(e -> label.setText(null));
 		    	pause.play();
 		    	ShowDoctor(event);
 
 			}
 			else {
 				
-				label1.setText("Invalid UserId or Passward");
+				label.setText("Invalid UserId or Passward");
 				PauseTransition pause = new PauseTransition(Duration.seconds(3));
-		    	pause.setOnFinished(e -> label1.setText(null));
+		    	pause.setOnFinished(e -> label.setText(null));
 		    	pause.play();
 			}
 		}
 		else {
-			label1.setText("Invalid UserId or Passward");
+			label.setText("Invalid UserId or Passward");
 			PauseTransition pause = new PauseTransition(Duration.seconds(3));
-	    	pause.setOnFinished(e -> label1.setText(null));
+	    	pause.setOnFinished(e -> label.setText(null));
 	    	pause.play();
 		}
         
@@ -433,7 +411,7 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("Password.fxml"));
 			loader.load();
 			Parent root = loader.getRoot();
-			Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
+			Image icon = new Image("C:\\Images\\logo.png");
 			Stage stage = new Stage();
 			stage.getIcons().add(icon);
 			stage.setTitle("Forgot Password");
@@ -448,9 +426,9 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 	@FXML
 	private void Next(ActionEvent event) {
 		 createconnection();
-		 String val1 = F_name1.getText();
-	     String val2 = L_name1.getText();
-	     String val3 = Email1.getText();
+		 String val1 = F_name.getText();
+	     String val2 = L_name.getText();
+	     String val3 = Email.getText();
 	     String val4 = NPassword.getText();
 	     String val5 = CPassword.getText();
 	     
@@ -482,9 +460,9 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 	 	 			
 	 	 			stmt.execute(rs);
 	 	 			stmt1.execute(rs1);
-	 	 			label2.setText("Password Changed Successfully");
+	 	 			label.setText("Password Changed Successfully");
 	 				PauseTransition pause = new PauseTransition(Duration.seconds(5));
-	 			    pause.setOnFinished(e -> label2.setText(null));
+	 			    pause.setOnFinished(e -> label.setText(null));
 	 			    pause.play();
 	 	 			stmt.close();
 	 	 		} catch (SQLException e) {
@@ -493,17 +471,17 @@ public void ShowDoctor(ActionEvent e) throws IOException {
 	 	 		}
 	    	 }
 	    	 else {
-	    		 label2.setText("Email id not found");
+	    		 label.setText("Email id not found");
 					PauseTransition pause = new PauseTransition(Duration.seconds(5));
-			    	pause.setOnFinished(e -> label2.setText(null));
+			    	pause.setOnFinished(e -> label.setText(null));
 			    	pause.play();
 	    	 }
 	    	 
 	     }
 	     else {
-	    	 label2.setText("Password Mismatched");
+	    	 label.setText("Password Mismatched");
 				PauseTransition pause = new PauseTransition(Duration.seconds(5));
-		    	pause.setOnFinished(e -> label2.setText(null));
+		    	pause.setOnFinished(e -> label.setText(null));
 		    	pause.play();
 	     }
 	}

@@ -7,17 +7,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="675.0" minWidth="1125.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+<BorderPane fx:id="borderpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="675.0" minWidth="1125.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Doctor.DoctorController">
    <top>
       <AnchorPane minHeight="85.0" minWidth="1125.0" BorderPane.alignment="CENTER">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dce2e7" height="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1125.0" />
-            <Button layoutX="473.0" layoutY="22.0" minHeight="40.0" minWidth="180.0" mnemonicParsing="false" onAction="#ShowSearch" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #845f10;" text=" SEARCH PHARMACIST" textFill="WHITE">
+            <Button layoutX="473.0" layoutY="22.0" minHeight="40.0" minWidth="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #845f10;" text=" SEARCH PHARMACIST" textFill="WHITE">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="681.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ShowAdd" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #845f10;" text="ADD PHARMACIST" textFill="WHITE">
+            <Button layoutX="681.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #845f10;" text="ADD PHARMACIST" textFill="WHITE">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
@@ -27,7 +27,7 @@
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Button>
-            <Text fill="#0c3d6b" layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE PHARMACIST" wrappingWidth="197.5341796875">
+            <Text fill="#0c3d6b" layoutX="57.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MY APPOINTMENTS" wrappingWidth="197.5341796875">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font>

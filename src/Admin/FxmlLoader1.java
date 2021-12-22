@@ -1,11 +1,9 @@
 package Admin;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 public class FxmlLoader1 {
@@ -15,7 +13,7 @@ public class FxmlLoader1 {
 	public Pane getPage(String fileName) {
 		
 		try {
-			URL fileUrl = PharmacyAdmin.class.getResource("/Admin/"+ fileName +".fxml");
+			URL fileUrl = AdminController.class.getResource("/Admin/"+ fileName +".fxml");
 			
 			if(fileUrl == null) {
 				throw new java.io.FileNotFoundException("FXML file Can't be found");

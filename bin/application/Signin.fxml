@@ -24,7 +24,7 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextField id="Email" fx:id="Userid" layoutX="84.0" layoutY="332.0" minHeight="40.0" minWidth="450.0" promptText="Sample@example.com">
+      <TextField id="Email" fx:id="Email" layoutX="84.0" layoutY="332.0" minHeight="40.0" minWidth="450.0" promptText="Sample@example.com">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font></TextField>
@@ -65,12 +65,12 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <Label fx:id="label1" layoutX="245.0" layoutY="282.0" prefHeight="20.0" prefWidth="288.0" textFill="#158e10">
+      <Label fx:id="label" layoutX="245.0" layoutY="282.0" prefHeight="20.0" prefWidth="288.0" textFill="#158e10">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="Password1" layoutX="84.0" layoutY="425.0" prefHeight="40.0" prefWidth="450.0" promptText="Sample#123">
+      <PasswordField fx:id="Password" layoutX="84.0" layoutY="425.0" prefHeight="40.0" prefWidth="450.0" promptText="Sample#123">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>

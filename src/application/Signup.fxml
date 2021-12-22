@@ -62,7 +62,7 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="Password2" layoutX="845.0" layoutY="235.0" minHeight="40.0" minWidth="450.0" promptText="Sample#123">
+      <PasswordField fx:id="Password" layoutX="845.0" layoutY="235.0" minHeight="40.0" minWidth="450.0" promptText="Sample#123">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>

@@ -1,11 +1,9 @@
 package application;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 public class FxmlLoader {
