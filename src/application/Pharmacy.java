@@ -12,10 +12,11 @@ import javafx.scene.layout.Pane;
 
 
 public class Pharmacy extends Application {
-    
+	Pane view;
+	
 	@FXML
 	private BorderPane borderpane;
-	Pane view;
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -25,7 +26,7 @@ public class Pharmacy extends Application {
 			borderpane = loader.load();
 			Scene scene = new Scene(borderpane);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			Image icon = new Image("C:\\Users\\santhosh\\eclipse-workspace\\Pharmacy_Project\\src\\Images\\logo.png");
+			Image icon = new Image("\\Images\\logo.png");
 			
 			FxmlLoader object = new FxmlLoader();
 			view = object.getPage("Home");

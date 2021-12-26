@@ -43,7 +43,7 @@
          <right>
             <AnchorPane minHeight="605.0" minWidth="500.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="368.0" layoutY="442.0" onMouseClicked="#Chat" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="368.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Images/doctorBot.png" />
                      </image>
