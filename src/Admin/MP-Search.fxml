@@ -29,10 +29,10 @@
             <TableColumn prefWidth="122.39997863769531" text="EMAIL ID" />
             <TableColumn prefWidth="129.599853515625" text="DATE OF BIRTH" />
             <TableColumn prefWidth="132.0" text="MOBLIE NO." />
-            <TableColumn prefWidth="143.19998779296873" text="QUALIFICATION" />
+            <TableColumn prefWidth="143.19998779296873" text="QUALIFICATIONS" />
         </columns>
       </TableView>
-      <Text fill="#0c3d6b" layoutX="84.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacists List">
+      <Text fill="#0c3d6b" layoutX="84.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHARMACIST">
          <font>
             <Font name="Verdana Bold" size="16.0" />
          </font>
