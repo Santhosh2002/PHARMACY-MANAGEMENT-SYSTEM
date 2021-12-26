@@ -1,6 +1,9 @@
 package Admin;
 
 import java.io.IOException;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -77,7 +80,7 @@ public class AdminController extends Controller {
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("MP-Search");
 		borderpane1.setCenter(view);
-		addButtonToTable();
+		
 	}
 	
 	@FXML
@@ -90,7 +93,27 @@ public class AdminController extends Controller {
 
 		super.Reset2(e);
 	}
-	
+	@FXML
+    public void ShowStocks(ActionEvent e) throws IOException {
+		
+    	Parent borderpane ;
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Stocks/Admin.fxml"));
+		borderpane = loader.load();
+		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Scene scene = new Scene(borderpane);
+//		scene.getStylesheets().add(getClass().getResource("/appliaction/application.css").toExternalForm());
+		Image icon = new Image("\\Images\\logo.png");
+		
+		
+//		FxmlLoader object = new FxmlLoader();
+//		view = object.getPage("Dashboard");
+//		((BorderPane) borderpane).setCenter(view);
+		
+		stage.getIcons().add(icon);
+		stage.setScene(scene);
+		stage.show();
+		stage.setResizable(false);
+	}
 	@FXML
     public void ShowHome(ActionEvent e) throws IOException {
 		
@@ -117,42 +140,31 @@ public class AdminController extends Controller {
 		stage.close();
 	}
 	@FXML
-	private TableView<Data> PharmacistTable = new TableView <>();
-	@FXML
-	private void addButtonToTable() {
-        TableColumn<Data, Void> edit = new TableColumn<Data, Void>("EDIT");
+    private TableColumn<PharmacistT, String> DOB;
 
-        Callback<TableColumn<Data, Void>, TableCell<Data, Void>> cellFactory = new Callback<TableColumn<Data, Void>, TableCell<Data, Void>>() {
-            @Override
-            public TableCell<Data, Void> call(final TableColumn<Data, Void> param) {
-                final TableCell<Data, Void> cell = new TableCell<Data, Void>() {
+    @FXML
+    private TableColumn<PharmacistT, String> Email;
 
-                    private final Button btn = new Button("EDIT");
+    @FXML
+    private TableColumn<PharmacistT, String> F_name;
 
-                    {
-                        btn.setOnAction((ActionEvent event) -> {
-                            Data data = getTableView().getItems().get(getIndex());
-                            System.out.println("selectedData: " + data);
-                        });
-                    }
+    @FXML
+    private TableColumn<PharmacistT, String> L_name;
 
-                    @Override
-                    public void updateItem(Void item, boolean empty) {
-                        super.updateItem(item, empty);
-                        if (empty) {
-                            setGraphic(null);
-                        } else {
-                            setGraphic(btn);
-                        }
-                    }
-                };
-                return cell;
-            }
-        };
+    @FXML
+    private TableColumn<PharmacistT, String> M_num;
 
-        edit.setCellFactory(cellFactory);
+    @FXML
+    private TableView<PharmacistT> PharmacistTable;
 
-        PharmacistTable.getColumns().add(edit);
+    @FXML
+    private TableColumn<PharmacistT, String> QualificationP;
 
-    }
+    @FXML
+    private TableColumn<PharmacistT, Integer> Sno;
+    
+    ObservableList<PharmacistT> list= FXCollections.observableArrayList(
+    	
+    	new PharmacistT(0, null, null, null, null, null, null)	
+    		);
 }
