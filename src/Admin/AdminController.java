@@ -139,32 +139,32 @@ public class AdminController extends Controller {
     public void Exit (ActionEvent e) {
 		stage.close();
 	}
-	@FXML
-    private TableColumn<PharmacistT, String> DOB;
-
-    @FXML
-    private TableColumn<PharmacistT, String> Email;
-
-    @FXML
-    private TableColumn<PharmacistT, String> F_name;
-
-    @FXML
-    private TableColumn<PharmacistT, String> L_name;
-
-    @FXML
-    private TableColumn<PharmacistT, String> M_num;
-
-    @FXML
-    private TableView<PharmacistT> PharmacistTable;
-
-    @FXML
-    private TableColumn<PharmacistT, String> QualificationP;
-
-    @FXML
-    private TableColumn<PharmacistT, Integer> Sno;
-    
-    ObservableList<PharmacistT> list= FXCollections.observableArrayList(
-    	
-    	new PharmacistT(0, null, null, null, null, null, null)	
-    		);
+//	@FXML
+//    private TableColumn<PharmacistT, String> DOB;
+//
+//    @FXML
+//    private TableColumn<PharmacistT, String> Email;
+//
+//    @FXML
+//    private TableColumn<PharmacistT, String> F_name;
+//
+//    @FXML
+//    private TableColumn<PharmacistT, String> L_name;
+//
+//    @FXML
+//    private TableColumn<PharmacistT, String> M_num;
+//
+//    @FXML
+//    private TableView<PharmacistT> PharmacistTable;
+//
+//    @FXML
+//    private TableColumn<PharmacistT, String> QualificationP;
+//
+//    @FXML
+//    private TableColumn<PharmacistT, Integer> Sno;
+//    
+//    ObservableList<PharmacistT> list= FXCollections.observableArrayList(
+//    	
+//    	new PharmacistT(0, null, null, null, null, null, null)	
+//    		);
 }

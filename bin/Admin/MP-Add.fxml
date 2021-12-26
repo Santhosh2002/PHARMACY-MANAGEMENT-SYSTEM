@@ -19,7 +19,7 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextField id="L_name" fx:id="F_name" layoutX="85.0" layoutY="85.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="Steve">
+      <TextField fx:id="F_name" layoutX="85.0" layoutY="85.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="Steve">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
@@ -29,7 +29,7 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextField id="L_name" fx:id="L_name" layoutX="410.0" layoutY="85.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="John">
+      <TextField fx:id="L_name" layoutX="410.0" layoutY="85.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="John">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
@@ -39,7 +39,7 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextField id="Email" fx:id="Email" layoutX="87.0" layoutY="177.0" minHeight="40.0" minWidth="450.0" promptText="Sample@examle.com">
+      <TextField fx:id="Email" layoutX="87.0" layoutY="177.0" minHeight="40.0" minWidth="450.0" promptText="Sample@examle.com">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
@@ -49,18 +49,18 @@
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <DatePicker id="DOB" fx:id="DOB" layoutX="87.0" layoutY="351.0" minHeight="40.0" minWidth="100.0" promptText="01/01/1000" />
+      <DatePicker fx:id="DOB" layoutX="87.0" layoutY="351.0" minHeight="40.0" minWidth="100.0" promptText="01/01/1000" />
       <Text fill="#0c3d6b" layoutX="410.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number :">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>
       </Text>
-      <TextField id="M_num" fx:id="M_num" layoutX="410.0" layoutY="351.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="987654321">
+      <TextField fx:id="M_num" layoutX="410.0" layoutY="351.0" minHeight="40.0" minWidth="222.0" prefHeight="40.0" prefWidth="222.0" promptText="987654321">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <TextArea id="Address" fx:id="QualificationP" layoutX="87.0" layoutY="448.0" prefHeight="91.0" prefWidth="450.0" promptText="H No: 00 , Street name , Colony , City ,State.">
+      <TextArea fx:id="QualificationP" layoutX="87.0" layoutY="448.0" prefHeight="91.0" prefWidth="450.0" promptText="H No: 00 , Street name , Colony , City ,State.">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>

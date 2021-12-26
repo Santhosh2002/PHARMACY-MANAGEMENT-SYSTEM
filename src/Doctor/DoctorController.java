@@ -39,14 +39,14 @@ public class DoctorController extends AdminController {
 		
 		FxmlLoader4 object = new FxmlLoader4();
 		view = object.getPage("D_Ptnt_Search");
-		borderpane.setCenter(view);
+		borderpane1.setCenter(view);
 	}
 	@FXML
 	private void ShowPatientHist(ActionEvent e) {
 		
 		FxmlLoader4 object = new FxmlLoader4();
 		view = object.getPage("D_Ptnt_list");
-		borderpane.setCenter(view);
+		borderpane1.setCenter(view);
 	}
 	
 	
