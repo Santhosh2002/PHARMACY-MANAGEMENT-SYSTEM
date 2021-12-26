@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderpane" minHeight="750.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+<BorderPane fx:id="borderpane" minHeight="750.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stocks.StocksController">
    <top>
       <AnchorPane minHeight="100.0" minWidth="1400.0" BorderPane.alignment="CENTER">
          <children>
@@ -70,47 +70,52 @@
             <AnchorPane minWidth="275.0" prefHeight="651.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" height="675.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
-                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="25.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../OneDrive/Pictures/Saved%20Pictures/admin2.png" />
+                        <Image url="@../Images/logo.png" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="29.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMINISTRATOR" wrappingWidth="213.1830654144287">
+                  <Text fill="WHITE" layoutX="31.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK MANAGEMENT" wrappingWidth="213.1830654144287">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="25.0" layoutY="285.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="326.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#StockLimit" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCK LIMIT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="340.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowManageP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MANAGE PHARMACIST" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MEDICINE DETAILS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="395.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MANAGE MEDICINE" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="424.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXPIRED PRODUCTS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="450.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDoctorP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MANAGE DOCTOR" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="473.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDoctorP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="NEAR TO EXPIRY" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="505.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="BOOKED MEDICINES" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="520.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCK SHORTAGE" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="560.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowHome" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="567.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="615.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXIT " textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="615.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXIT APPLICATION" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="28.0" layoutY="277.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>

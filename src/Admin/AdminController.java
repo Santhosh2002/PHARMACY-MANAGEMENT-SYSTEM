@@ -93,7 +93,27 @@ public class AdminController extends Controller {
 
 		super.Reset2(e);
 	}
-	
+	@FXML
+    public void ShowStocks(ActionEvent e) throws IOException {
+		
+    	Parent borderpane ;
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Stocks/Admin.fxml"));
+		borderpane = loader.load();
+		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Scene scene = new Scene(borderpane);
+//		scene.getStylesheets().add(getClass().getResource("/appliaction/application.css").toExternalForm());
+		Image icon = new Image("\\Images\\logo.png");
+		
+		
+//		FxmlLoader object = new FxmlLoader();
+//		view = object.getPage("Dashboard");
+//		((BorderPane) borderpane).setCenter(view);
+		
+		stage.getIcons().add(icon);
+		stage.setScene(scene);
+		stage.show();
+		stage.setResizable(false);
+	}
 	@FXML
     public void ShowHome(ActionEvent e) throws IOException {
 		

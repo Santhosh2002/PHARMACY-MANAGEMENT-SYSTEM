@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderpane" minHeight="750.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+<BorderPane fx:id="borderpane" minHeight="750.0" minWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stocks.StocksController">
    <top>
       <AnchorPane minHeight="100.0" minWidth="1400.0" BorderPane.alignment="CENTER">
          <children>
@@ -80,12 +80,12 @@
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="28.0" layoutY="326.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCK LIMIT" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="326.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#StockLimit" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCK LIMIT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowManageP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MEDICINE DETAILS" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MEDICINE DETAILS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
@@ -105,7 +105,7 @@
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="567.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowHome" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="567.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
