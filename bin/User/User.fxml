@@ -90,7 +90,7 @@
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="495.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#ShowHome" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
+                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="495.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#Logout" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
