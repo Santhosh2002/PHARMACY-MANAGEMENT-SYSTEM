@@ -14,6 +14,10 @@ public class DoctorController extends AdminController {
 		super.ShowHome(e);   	
 	}
 	@FXML
+    public void Exit() {
+		super.ExitApplication();   	
+	}
+	@FXML
 	public void Appointments(ActionEvent e) {
 		
 		FxmlLoader4 object = new FxmlLoader4();

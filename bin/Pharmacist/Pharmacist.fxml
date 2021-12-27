@@ -95,22 +95,12 @@
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="472.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="ONLINE ORDERING" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="476.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="570.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
-                     <font>
-                        <Font name="Verdana" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="25.0" layoutY="621.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXIT" textFill="WHITE">
-                     <font>
-                        <Font name="Verdana" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="25.0" layoutY="520.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="ONLINE ORDERING" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="529.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXIT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>

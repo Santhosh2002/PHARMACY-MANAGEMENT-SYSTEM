@@ -98,7 +98,7 @@
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button contentDisplay="CENTER" layoutX="29.0" layoutY="547.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="EXIT " textFill="WHITE">
+                  <Button contentDisplay="CENTER" layoutX="29.0" layoutY="547.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#Exit" style="-fx-background-color: #202020;" text="EXIT " textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>

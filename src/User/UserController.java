@@ -19,4 +19,8 @@ public class UserController extends AdminController {
 		view = object.getPage("Appointment");
 		borderpane.setCenter(view);
 	}
+	@FXML
+    public void Exit() {
+		super.ExitApplication();   	
+	}
 }
