@@ -161,7 +161,14 @@ public class AdminController extends Controller {
 		borderpane1.setCenter(view);
 
 	}
+	@FXML
+	private void ShowPatientsList(ActionEvent e) {
 
+		FxmlLoader1 object = new FxmlLoader1();
+		view = object.getPage("Check_Patients");
+		borderpane1.setCenter(view);
+
+	}
 
 //	@FXML
 //    private TableColumn<PharmacistT, String> DOB;
