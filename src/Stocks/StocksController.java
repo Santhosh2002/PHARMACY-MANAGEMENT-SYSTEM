@@ -3,8 +3,16 @@ package Stocks;
 import java.io.IOException;
 
 import Admin.AdminController;
+import application.FxmlLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 public class StocksController extends AdminController {
 	@FXML
@@ -24,6 +32,28 @@ public class StocksController extends AdminController {
 	FxmlLoader5 object = new FxmlLoader5();
 	view = object.getPage("StockLimit");
 	borderpane.setCenter(view);
+
 }
+	@FXML
+	public void BackToAdmin(ActionEvent e) throws IOException {
+
+		Parent borderpane ;
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/Admin.fxml"));
+		borderpane = loader.load();
+		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Scene scene = new Scene(borderpane);
+//		scene.getStylesheets().add(getClass().getResource("/appliaction/application.css").toExternalForm());
+		Image icon = new Image("\\Images\\logo.png");
+
+
+		FxmlLoader object = new FxmlLoader();
+		view = object.getPage("Dashboard");
+		((BorderPane) borderpane).setCenter(view);
+
+		stage.getIcons().add(icon);
+		stage.setScene(scene);
+		stage.show();
+		stage.setResizable(false);
+	}
 		
 }
