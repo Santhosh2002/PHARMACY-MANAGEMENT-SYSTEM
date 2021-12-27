@@ -139,6 +139,29 @@ public class AdminController extends Controller {
     public void Exit (ActionEvent e) {
 		stage.close();
 	}
+	@FXML
+	private void ShowBookedMed(ActionEvent e) throws IOException {
+//		Parent borderpane1 ;
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/Booked_Med.fxml"));
+		borderpane1 = loader.load();
+
+		FxmlLoader1 object = new FxmlLoader1();
+//		FxmlLoader1 object1 = new FxmlLoader1();
+		view = object.getPage("Booked_Med");
+		borderpane.setCenter(view);
+
+//		view1 = object1.getPage("MP-Add1");
+//		((BorderPane) borderpane1).setCenter(view1);
+	}
+	@FXML
+	private void ShowViewList(ActionEvent e) {
+
+		FxmlLoader1 object = new FxmlLoader1();
+		view = object.getPage("View_List");
+		borderpane1.setCenter(view);
+
+	}
+
 //	@FXML
 //    private TableColumn<PharmacistT, String> DOB;
 //
