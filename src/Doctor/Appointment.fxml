@@ -12,17 +12,7 @@
       <AnchorPane minHeight="85.0" minWidth="1125.0" BorderPane.alignment="CENTER">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dce2e7" height="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1125.0" />
-            <Button layoutX="473.0" layoutY="22.0" minHeight="40.0" minWidth="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #845f10;" text=" SEARCH PHARMACIST" textFill="WHITE">
-               <font>
-                  <Font name="Verdana Bold" size="12.0" />
-               </font>
-            </Button>
-            <Button layoutX="681.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #845f10;" text="ADD PHARMACIST" textFill="WHITE">
-               <font>
-                  <Font name="Verdana Bold" size="12.0" />
-               </font>
-            </Button>
-            <Button layoutX="893.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" style="-fx-background-color: #845f10;" text="ASSIGN STOCKS" textFill="WHITE">
+            <Button layoutX="702.0" layoutY="23.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ShowTodayApp" style="-fx-background-color: #845f10;" text="TODAY'S APPOINTMENTS" textFill="WHITE">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
@@ -32,6 +22,11 @@
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Text>
+            <Button layoutX="911.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ShowTodayApp" style="-fx-background-color: #845f10;" text="DELETE APPOINTMENT" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </top>
