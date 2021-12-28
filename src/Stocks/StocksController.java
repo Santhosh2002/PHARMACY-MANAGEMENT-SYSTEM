@@ -32,15 +32,51 @@ public class StocksController extends AdminController {
 	FxmlLoader5 object = new FxmlLoader5();
 	view = object.getPage("Med_Details");
 	borderpane.setCenter(view);
-}
+    }
 	@FXML
-	public void StockSearch(ActionEvent e) {
+	public void MDetails(ActionEvent e) {
+
+		FxmlLoader5 object = new FxmlLoader5();
+		view = object.getPage("Details");
+		borderpane.setCenter(view);
+	}
+
+	@FXML
+	public void Stocks(ActionEvent e) {
 	
 	FxmlLoader5 object = new FxmlLoader5();
-	view = object.getPage("StockLimit");
+	view = object.getPage("Stocks");
 	borderpane.setCenter(view);
 
 }
+	@FXML
+	public void StockSearch(ActionEvent e) {
+
+		FxmlLoader5 object = new FxmlLoader5();
+		view = object.getPage("StockLimit");
+		borderpane.setCenter(view);
+	}
+	@FXML
+	public void ExpiryProducts(ActionEvent e) {
+
+		FxmlLoader5 object = new FxmlLoader5();
+		view = object.getPage("Exp_Products");
+		borderpane.setCenter(view);
+
+	}
+	@FXML
+	public void NearExpiry(ActionEvent e) {
+		FxmlLoader5 object = new FxmlLoader5();
+		view = object.getPage("Nexp_Products");
+		borderpane.setCenter(view);
+	}
+	@FXML
+	public void StockShortage(ActionEvent e) {
+		FxmlLoader5 object = new FxmlLoader5();
+		view = object.getPage("Shortage");
+		borderpane.setCenter(view);
+	}
+
 	@FXML
 	public void BackToAdmin(ActionEvent e) throws IOException {
 
@@ -62,5 +98,5 @@ public class StocksController extends AdminController {
 		stage.show();
 		stage.setResizable(false);
 	}
-		
-}
+
+	}
