@@ -85,7 +85,7 @@
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MEDICINE DETAILS" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#MedicineDetails" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MEDICINE DETAILS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
