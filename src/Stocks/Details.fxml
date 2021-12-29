@@ -27,9 +27,10 @@
             <TableColumn prefWidth="77.5999755859375" text="S.NO." />
             <TableColumn prefWidth="128.8000030517578" text="DRUG NAME" />
             <TableColumn prefWidth="132.800048828125" text="DRUG ID" />
-            <TableColumn prefWidth="171.199951171875" text="MANUFACTURE DATE" />
-            <TableColumn prefWidth="172.79998779296875" text="EXPIRY DATE" />
-            <TableColumn prefWidth="221.5999755859375" text="USED FOR" />
+            <TableColumn prefWidth="148.00009155273438" text="MANUFACTURE DATE" />
+            <TableColumn prefWidth="139.99993896484375" text="EXPIRY DATE" />
+            <TableColumn prefWidth="136.79998779296875" text="COMPANY" />
+            <TableColumn prefWidth="136.79998779296875" text="DESCRIPTION" />
          </columns>
       </TableView>
       <Text fill="#0c3d6b" layoutX="84.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DETAILS">
