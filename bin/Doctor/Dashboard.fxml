@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane minHeight="650.0" minWidth="1125.0" style="-fx-background-color: #dce2e7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane minHeight="650.0" minWidth="1125.0" onMouseClicked="#Dashboard" style="-fx-background-color: #dce2e7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
    <children>
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#9dacb9" height="100.0" layoutX="60.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1005.0" />
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#3d8bc7d6" height="180.0" layoutX="60.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
@@ -13,41 +14,76 @@
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#bf4646" height="180.0" layoutX="765.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ff6921d6" height="180.0" layoutX="60.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#c7be23d6" height="180.0" layoutX="410.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
-      <Text fill="WHITE" layoutX="101.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning, Administrator !">
+      <Text fill="WHITE" layoutX="101.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Welcome, Doctor!">
          <font>
             <Font name="Calibri Bold" size="60.0" />
          </font>
       </Text>
-      <Text fill="#fafcff" layoutX="91.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+      <Text fx:id="Time" fill="WHITE" layoutX="84.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="277.59997558593744">
          <font>
-            <Font name="System Bold" size="20.0" />
+            <Font name="System Bold" size="40.0" />
          </font>
       </Text>
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffffffd6" height="180.0" layoutX="765.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
-      <Text fill="#4d5e76" layoutX="794.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+      <Text fill="#4d5e76" layoutX="776.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PENDING APPOINTEMENTS" wrappingWidth="277.5999755859375">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Text fill="#4d5e76" layoutX="436.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+      <Text fill="#4d5e76" layoutX="436.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICINES : " wrappingWidth="173.3367462158203">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Text fill="#fafcff" layoutX="787.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+      <Text fill="#fafcff" layoutX="787.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PATIENTS :" wrappingWidth="173.3367462158203">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Text fill="#4d5e76" layoutX="436.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+      <Text fill="#4d5e76" layoutX="436.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MY RATING :" wrappingWidth="173.3367462158203">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Text fill="#fafcff" layoutX="91.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total " wrappingWidth="173.3367462158203">
+      <Text fill="#fafcff" layoutX="80.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY'S APPOINTMENTS :" wrappingWidth="258.99999999999994">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
+      <Text fx:id="Date" fill="WHITE" layoutX="84.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="277.59997558593744">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="P1" layoutX="436.0" layoutY="323.0" opacity="0.7" prefHeight="27.0" prefWidth="245.0" progress="0.68" style="-fx-background-color: #1fa42a;;" />
+      <Text fill="#074e0c" layoutX="523.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40" wrappingWidth="89.33674621582031">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Text>
+      <Text fill="#660b0b" layoutX="881.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="96" wrappingWidth="89.33674621582031">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="P2" layoutX="792.0" layoutY="323.0" opacity="0.7" prefHeight="27.0" prefWidth="245.0" progress="0.1" style="-fx-background-color: #bf4646;;" />
+      <ProgressBar fx:id="P5" layoutX="792.0" layoutY="559.0" opacity="0.7" prefHeight="27.0" prefWidth="245.0" progress="0.09" style="-fx-background-color: #ffffff;;" />
+      <Text layoutX="881.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14" wrappingWidth="89.33674621582031">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Text>
+      <Text fill="#5b5500" layoutX="523.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.6" wrappingWidth="89.33674621582031">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="P4" layoutX="439.0" layoutY="559.0" opacity="0.7" prefHeight="27.0" prefWidth="245.0" progress="0.75" style="-fx-background-color: #c7be23;;" />
+      <Text fill="#84340f" layoutX="178.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="89.33674621582031">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="P3" layoutX="87.0" layoutY="559.0" opacity="0.7" prefHeight="27.0" prefWidth="245.0" progress="0.54" style="-fx-background-color: #ff6921;;" />
    </children>
 </AnchorPane>
