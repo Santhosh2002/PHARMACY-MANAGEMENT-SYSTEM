@@ -22,11 +22,14 @@
             <Font name="Verdana Bold" size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="PharmacistTable" layoutX="109.0" layoutY="173.0" opacity="0.87" prefHeight="262.0" prefWidth="906.0">
+      <TableView fx:id="PharmacistTable" layoutX="110.0" layoutY="174.0" opacity="0.87" prefHeight="262.0" prefWidth="906.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="SELECT" />
             <TableColumn prefWidth="77.5999755859375" text="S.NO." />
-            <TableColumn prefWidth="751.0" text="LIST" />
+            <TableColumn fx:id="C_L_name" prefWidth="230.0" text="DRUG NAME" />
+            <TableColumn fx:id="C_Email" prefWidth="198.0" text="COMPANY" />
+            <TableColumn fx:id="C_M_num" prefWidth="201.0" text="CATEGORY" />
+            <TableColumn prefWidth="100.0" text="PRICE" />
+            <TableColumn prefWidth="97.0" text="QUANTITY" />
          </columns>
       </TableView>
       <Text fill="#0c3d6b" layoutX="110.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICINES">

@@ -20,11 +20,11 @@ public class UserController extends AdminController {
 		borderpane.setCenter(view);
 	}
 	@FXML
-<<<<<<< Updated upstream
+
     public void Exit() {
 		super.ExitApplication();   	
 	}
-=======
+
 	public void MyCart(ActionEvent e) {
 		
 		FxmlLoader4 object = new FxmlLoader4();
@@ -45,6 +45,16 @@ public class UserController extends AdminController {
 		view = object.getPage("Medicines");
 		borderpane.setCenter(view);
 	}
-	
->>>>>>> Stashed changes
+	@FXML
+	public void Dashboard(ActionEvent e) {
+		
+		FxmlLoader4 object = new FxmlLoader4();
+		view = object.getPage("Dashboard");
+		borderpane.setCenter(view);
+	}
+	@FXML
+    public void dashboardUser() throws IOException {
+    	super.Dashboard();
+    }
+
 }
