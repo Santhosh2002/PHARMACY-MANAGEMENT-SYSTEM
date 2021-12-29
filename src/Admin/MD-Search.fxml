@@ -23,16 +23,16 @@
          </font>
       </Button>
       <TableView fx:id="PharmacistTable" layoutX="107.0" layoutY="170.0" opacity="0.87" prefHeight="355.0" prefWidth="815.0">
-        <columns>
-          <TableColumn fx:id="C_Sno" prefWidth="77.5999755859375" text="S.NO." />
-          <TableColumn fx:id="C_F_name" prefWidth="111.20001220703125" text="FIRST NAME" />
-            <TableColumn fx:id="C_L_name" prefWidth="118.4000244140625" text="LAST NAME" />
-            <TableColumn fx:id="C_Email" prefWidth="176.80001831054688" text="EMAIL ID" />
-            <TableColumn fx:id="C_M_num" prefWidth="151.20001220703125" text="MOBLIE NO." />
-            <TableColumn fx:id="C_QualificationP" prefWidth="175.9999877929688" text="QUALIFICATION" />
-        </columns>
+         <columns>
+            <TableColumn prefWidth="77.5999755859375" text="S.NO." />
+            <TableColumn prefWidth="111.20001220703125" text="FIRST NAME" />
+            <TableColumn prefWidth="118.4000244140625" text="LAST NAME" />
+            <TableColumn prefWidth="176.0" text="EMAIL ID" />
+            <TableColumn prefWidth="152.79998779296875" text="MOBLIE NO." />
+            <TableColumn prefWidth="176.8000366210938" text="EDUCATION" />
+         </columns>
       </TableView>
-      <Text fill="#0c3d6b" layoutX="84.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHARMACIST">
+      <Text fill="#0c3d6b" layoutX="84.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOCTORLIST">
          <font>
             <Font name="Verdana Bold" size="16.0" />
          </font>

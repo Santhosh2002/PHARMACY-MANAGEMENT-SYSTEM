@@ -45,7 +45,7 @@ public class StocksController extends AdminController {
 	public void Stocks(ActionEvent e) {
 	
 	FxmlLoader5 object = new FxmlLoader5();
-	view = object.getPage("Stocks");
+	view = object.getPage("Stock");
 	borderpane.setCenter(view);
 
 }

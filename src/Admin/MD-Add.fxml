@@ -60,28 +60,28 @@
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextField>
-      <TextArea fx:id="QualificationP" layoutX="87.0" layoutY="448.0" prefHeight="91.0" prefWidth="450.0" promptText="H No: 00 , Street name , Colony , City ,State.">
+      <TextArea fx:id="EducationD" layoutX="87.0" layoutY="448.0" prefHeight="91.0" prefWidth="450.0" promptText="M.B.B.S , Cardioligest.">
          <font>
             <Font name="Verdana Italic" size="16.0" />
          </font>
       </TextArea>
-      <Button layoutX="853.0" layoutY="277.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Addtolist" style="-fx-background-color: #CCFFE5;" text="ADD TO LIST">
+      <Button layoutX="853.0" layoutY="277.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#AddDoc" style="-fx-background-color: #CCFFE5;" text="ADD TO LIST">
          <font>
             <Font name="Verdana Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="853.0" layoutY="398.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#Re" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #CCFFE5;" text="RESET">
+      <Button layoutX="853.0" layoutY="398.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#ResetD" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #CCFFE5;" text="RESET">
          <font>
             <Font name="Verdana Bold" size="14.0" />
          </font>
       </Button>
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#2fc9d4" height="72.0" layoutX="774.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="281.0" />
-      <Text fill="#0c3d6b" layoutX="789.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD DOCTOR" wrappingWidth="249.7735595703125">
+      <Text fill="#0c3d6b" layoutX="789.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    ADD DOCTOR" wrappingWidth="249.7735595703125">
          <font>
             <Font name="Verdana Bold" size="23.0" />
          </font>
       </Text>
-      <Text fill="#0c3d6b" layoutX="86.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qualifications:">
+      <Text fill="#0c3d6b" layoutX="86.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Education:">
          <font>
             <Font name="Verdana Bold Italic" size="16.0" />
          </font>

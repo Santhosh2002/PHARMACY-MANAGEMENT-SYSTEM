@@ -1,10 +1,13 @@
 package Admin;
 
+import java.util.Date;
+
 public class PharmacistT {
 	
-         int Sno;
-         String F_name,L_name,Email,QualificationP,DOB,M_num;
-		public PharmacistT(int sno, String m_num, String f_name, String l_name, String email, String qualificationP,String dOB) {
+         int Sno,M_num;
+         Date DOB;
+         String F_name,L_name,Email,QualificationP;
+		public PharmacistT(int sno, int m_num, String f_name, String l_name, String email, String qualificationP) {
 			super();
 			Sno = sno;
 			M_num = m_num;
@@ -12,7 +15,7 @@ public class PharmacistT {
 			L_name = l_name;
 			Email = email;
 			QualificationP = qualificationP;
-			DOB = dOB;
+//			DOB = dOB;
 		}
 		public int getSno() {
 			return Sno;
@@ -20,10 +23,10 @@ public class PharmacistT {
 		public void setSno(int sno) {
 			Sno = sno;
 		}
-		public String getM_num() {
+		public int getM_num() {
 			return M_num;
 		}
-		public void setM_num(String m_num) {
+		public void setM_num(int m_num) {
 			M_num = m_num;
 		}
 		public String getF_name() {
@@ -50,10 +53,10 @@ public class PharmacistT {
 		public void setQualificationP(String qualificationP) {
 			QualificationP = qualificationP;
 		}
-		public String getDOB() {
+		public Date getDOB() {
 			return DOB;
 		}
-		public void setDOB(String dOB) {
+		public void setDOB(Date dOB) {
 			DOB = dOB;
 		}
 		
