@@ -16,11 +16,35 @@ public class UserController extends AdminController {
 	public void MyOrders(ActionEvent e) {
 		
 		FxmlLoader4 object = new FxmlLoader4();
-		view = object.getPage("Appointment");
+		view = object.getPage("MyOrders");
 		borderpane.setCenter(view);
 	}
 	@FXML
+<<<<<<< Updated upstream
     public void Exit() {
 		super.ExitApplication();   	
 	}
+=======
+	public void MyCart(ActionEvent e) {
+		
+		FxmlLoader4 object = new FxmlLoader4();
+		view = object.getPage("MyCart");
+		borderpane.setCenter(view);
+	}
+	@FXML
+	public void PreviousOrders(ActionEvent e) {
+		
+		FxmlLoader4 object = new FxmlLoader4();
+		view = object.getPage("PreviousOrders");
+		borderpane.setCenter(view);
+	}
+	@FXML
+	public void Medicines(ActionEvent e) {
+		
+		FxmlLoader4 object = new FxmlLoader4();
+		view = object.getPage("Medicines");
+		borderpane.setCenter(view);
+	}
+	
+>>>>>>> Stashed changes
 }
