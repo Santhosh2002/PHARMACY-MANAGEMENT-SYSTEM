@@ -1,7 +1,5 @@
 package User;
-
 import java.io.IOException;
-
 import Admin.AdminController;
 import Doctor.FxmlLoader4;
 import javafx.event.ActionEvent;
@@ -50,6 +48,20 @@ public class UserController extends AdminController {
 		
 		FxmlLoader2 object = new FxmlLoader2();
 		view = object.getPage("Dashboard");
+		borderpane.setCenter(view);
+	}
+	@FXML
+	public void BookAppointments(ActionEvent e) {
+
+		FxmlLoader2 object = new FxmlLoader2();
+		view = object.getPage("BookAppointments");
+		borderpane.setCenter(view);
+	}
+	@FXML
+	public void UB_List(ActionEvent e) {
+
+		FxmlLoader2 object = new FxmlLoader2();
+		view = object.getPage("UB_List");
 		borderpane.setCenter(view);
 	}
 	@FXML
