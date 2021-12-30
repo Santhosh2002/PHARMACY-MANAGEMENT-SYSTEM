@@ -85,7 +85,7 @@
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="444.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="BOOK APPOINTMENT" textFill="WHITE">
+                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="444.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#BookAppointments" style="-fx-background-color: #202020;" text="BOOK APPOINTMENT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
