@@ -17,12 +17,12 @@
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="681.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ShowAdd" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #845f10;" text="ADD DOCTOR" textFill="WHITE">
+            <Button layoutX="681.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ShowAddDoc" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #845f10;" text="ADD DOCTOR" textFill="WHITE">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="893.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" style="-fx-background-color: #845f10;" text="CHECK PATIENTS LIST" textFill="WHITE">
+            <Button layoutX="893.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ShowPatientsList" style="-fx-background-color: #845f10;" text="CHECK PATIENTS LIST" textFill="WHITE">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#84b2d1" height="549.0" layoutX="59.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1033.0" />
+      <TableView fx:id="PharmacistTable" layoutX="94.0" layoutY="121.0" opacity="0.87" prefHeight="402.0" prefWidth="958.0">
+         <columns>
+            <TableColumn prefWidth="49.600006103515625" text="S.NO." />
+            <TableColumn prefWidth="108.0" text="NAME" />
+            <TableColumn prefWidth="122.39997863769531" text="EMAIL ID" />
+            <TableColumn prefWidth="129.599853515625" text="DATE OF BIRTH" />
+            <TableColumn prefWidth="132.0" text="MOBLIE NO." />
+            <TableColumn prefWidth="143.19998779296873" text="DATE OF APPOINTMENT" />
+            <TableColumn prefWidth="75.0" text="GENDER" />
+            <TableColumn prefWidth="195.0" text="TIME OF APPOINTMENT" />
+         </columns>
+      </TableView>
+      <Text fill="#0c3d6b" layoutX="94.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PATIENTS LIST">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -22,16 +22,16 @@
             <Font name="Verdana Bold" size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="PharmacistTable" layoutX="94.0" layoutY="183.0" opacity="0.87" prefHeight="355.0" prefWidth="958.0">
+      <TableView fx:id="PatientTable" layoutX="94.0" layoutY="183.0" opacity="0.87" prefHeight="355.0" prefWidth="958.0">
          <columns>
-            <TableColumn prefWidth="49.600006103515625" text="S.NO." />
-            <TableColumn prefWidth="108.0" text="NAME" />
-            <TableColumn prefWidth="122.39997863769531" text="EMAIL ID" />
-            <TableColumn prefWidth="129.599853515625" text="DATE OF BIRTH" />
-            <TableColumn prefWidth="132.0" text="MOBLIE NO." />
-            <TableColumn prefWidth="164.0" text="DATE OF APPOINTMENT" />
-            <TableColumn prefWidth="88.0" text="GENDER" />
-            <TableColumn prefWidth="162.0" text="TIME OF APPOINTMENT" />
+            <TableColumn fx:id="Sno" prefWidth="49.600006103515625" text="S.NO." />
+            <TableColumn fx:id="Name" prefWidth="108.0" text="NAME" />
+            <TableColumn fx:id="Email" prefWidth="122.39997863769531" text="EMAIL ID" />
+            <TableColumn fx:id="DOB" prefWidth="129.599853515625" text="DATE OF BIRTH" />
+            <TableColumn fx:id="M_num" prefWidth="132.0" text="MOBLIE NO." />
+            <TableColumn fx:id="DOA" prefWidth="164.0" text="DATE OF APPOINTMENT" />
+            <TableColumn fx:id="Gender" prefWidth="88.0" text="GENDER" />
+            <TableColumn fx:id="TimeOA" prefWidth="162.0" text="TIME OF APPOINTMENT" />
          </columns>
       </TableView>
       <Text fill="#0c3d6b" layoutX="94.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient's Appointment List">

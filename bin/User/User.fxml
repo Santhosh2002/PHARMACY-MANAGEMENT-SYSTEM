@@ -70,17 +70,17 @@
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="291.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
+                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="291.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#Dashboard" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="344.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MY ORDERS" textFill="WHITE">
+                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="344.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#MyOrders" style="-fx-background-color: #202020;" text="MY ORDERS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="394.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="MEDICINES" textFill="WHITE">
+                  <Button contentDisplay="CENTER" layoutX="28.0" layoutY="394.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#Medicines" style="-fx-background-color: #202020;" text="MEDICINES" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
@@ -95,7 +95,7 @@
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button contentDisplay="CENTER" layoutX="29.0" layoutY="547.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" style="-fx-background-color: #202020;" text="EXIT " textFill="WHITE">
+                  <Button contentDisplay="CENTER" layoutX="29.0" layoutY="547.0" minHeight="40.0" minWidth="220.0" mnemonicParsing="false" onAction="#Exit" style="-fx-background-color: #202020;" text="EXIT " textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>

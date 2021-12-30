@@ -75,47 +75,37 @@
                         <Image url="@../Images/logo.png" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="31.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK MANAGEMENT" wrappingWidth="213.1830654144287">
+                  <Text fill="WHITE" layoutX="31.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK MANAGEMENT" wrappingWidth="213.1830654144287">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="28.0" layoutY="326.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#StockLimit" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCK LIMIT" textFill="WHITE">
+                  <Button layoutX="27.0" layoutY="356.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#StockLimit" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCK LIMIT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MEDICINE DETAILS" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="406.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#MedicineDetails" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="MEDICINE DETAILS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="424.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXPIRED PRODUCTS" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="454.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Stocks" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCKS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="473.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDoctorP" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="NEAR TO EXPIRY" textFill="WHITE">
+                  <Button layoutX="27.0" layoutY="503.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="520.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCK SHORTAGE" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="552.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BackToAdmin" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="BACK TO ADMIN" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="28.0" layoutY="567.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="LOG OUT" textFill="WHITE">
-                     <font>
-                        <Font name="Verdana" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="25.0" layoutY="615.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="EXIT APPLICATION" textFill="WHITE">
-                     <font>
-                        <Font name="Verdana" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="28.0" layoutY="277.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
+                  <Button layoutX="28.0" layoutY="309.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ShowDash" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>

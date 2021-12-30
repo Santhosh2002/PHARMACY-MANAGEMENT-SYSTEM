@@ -11,4 +11,8 @@ public class PharmacistController extends AdminController {
     public void Logout(ActionEvent e) throws IOException {
 		super.ShowHome(e);   	
 	}
+	@FXML
+    public void Exit() {
+		super.ExitApplication();   	
+	}
 }

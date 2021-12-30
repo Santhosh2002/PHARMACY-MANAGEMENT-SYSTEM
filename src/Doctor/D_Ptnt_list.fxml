@@ -3,7 +3,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -12,17 +11,12 @@
 <AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Doctor.DoctorController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#84b2d1" height="549.0" layoutX="59.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1033.0" />
-      <TextField layoutX="94.0" layoutY="107.0" minHeight="40.0" minWidth="340.0" promptText="Enter First Name">
-         <font>
-            <Font name="Verdana Bold" size="14.0" />
-         </font>
-      </TextField>
-      <Button layoutX="926.0" layoutY="107.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: #326e9c;" text="SEARCH" textFill="WHITE">
+      <Button layoutX="933.0" layoutY="59.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#Data" style="-fx-background-color: #326e9c;" text="SHOW" textFill="WHITE">
          <font>
             <Font name="Verdana Bold" size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="PharmacistTable" layoutX="94.0" layoutY="183.0" opacity="0.87" prefHeight="355.0" prefWidth="958.0">
+      <TableView fx:id="PharmacistTable" layoutX="97.0" layoutY="121.0" opacity="0.87" prefHeight="392.0" prefWidth="958.0">
          <columns>
             <TableColumn prefWidth="49.600006103515625" text="S.NO." />
             <TableColumn prefWidth="108.0" text="NAME" />
@@ -39,10 +33,5 @@
             <Font name="Verdana Bold" size="16.0" />
          </font>
       </Text>
-      <TextField layoutX="509.0" layoutY="107.0" minHeight="40.0" minWidth="340.0" promptText="Enter Login Id">
-         <font>
-            <Font name="Verdana Bold" size="14.0" />
-         </font>
-      </TextField>
    </children>
 </AnchorPane>
