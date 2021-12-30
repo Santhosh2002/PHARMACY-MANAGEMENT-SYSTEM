@@ -17,7 +17,7 @@ public class DoctorController extends AdminController {
 
 	@FXML
     public void Logout(ActionEvent e) throws IOException {
-		super.ShowHome(e);   	
+		super.ShowHomeA(e);   	
 	}
 	@FXML
     public void Exit() {

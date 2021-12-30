@@ -42,6 +42,7 @@ import application.Controller;
 import application.FxmlLoader;
 
 public class AdminController extends Controller {
+	
 	protected Stage stage;
 	@FXML
 	protected BorderPane borderpane; 
@@ -105,14 +106,14 @@ public class AdminController extends Controller {
 		
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("MP-Add");
-		borderpane1.setCenter(view);
+		borderpane.setCenter(view);
 	}
 	@FXML
 	private void ShowAddDoc(ActionEvent e) {
 		
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("MD-Add");
-		borderpane1.setCenter(view);
+		borderpane.setCenter(view);
 	}
 	
 	
@@ -148,7 +149,7 @@ public class AdminController extends Controller {
 		stage.setResizable(false);
 	}
 	@FXML
-    public void ShowHome(ActionEvent e) throws IOException {
+    public void ShowHomeA(ActionEvent e) throws IOException {
 		
     	Parent borderpane ;
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/Pharmacy.fxml"));
@@ -188,7 +189,7 @@ public class AdminController extends Controller {
 
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("View_List");
-		borderpane1.setCenter(view);
+		borderpane.setCenter(view);
 
 	}
 	@FXML
@@ -196,7 +197,7 @@ public class AdminController extends Controller {
 
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("Check_Patients");
-		borderpane1.setCenter(view);
+		borderpane.setCenter(view);
 
 	}
 	@FXML
@@ -284,7 +285,7 @@ public class AdminController extends Controller {
 		
 		FxmlLoader1 object = new FxmlLoader1();
 		view = object.getPage("MP-Search");
-		borderpane1.setCenter(view);
+		borderpane.setCenter(view);
 
 	}
     @FXML
@@ -448,7 +449,7 @@ public class AdminController extends Controller {
 			
 			FxmlLoader1 object = new FxmlLoader1();
 			view = object.getPage("MM-Add");
-			borderpane1.setCenter(view);
+			borderpane.setCenter(view);
 		}
 	 
 	 @FXML

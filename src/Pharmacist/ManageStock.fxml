@@ -7,12 +7,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="675.0" minWidth="1125.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="675.0" minWidth="1125.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pharmacist.PharmacistController">
    <top>
       <AnchorPane minHeight="85.0" minWidth="1125.0" BorderPane.alignment="CENTER">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dce2e7" height="85.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1125.0" />
-            <Button layoutX="884.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ShowAdd" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #845f10;" text="STOCK LIST" textFill="WHITE">
+            <Button layoutX="884.0" layoutY="22.0" minHeight="40.0" minWidth="185.0" mnemonicParsing="false" onAction="#ManageStocks" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #845f10;" text="STOCK LIST" textFill="WHITE">
                <font>
                   <Font name="Verdana Bold" size="12.0" />
                </font>

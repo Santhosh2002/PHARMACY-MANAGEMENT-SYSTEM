@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 public class StocksController extends AdminController {
 	@FXML
 	public void Logout(ActionEvent e) throws IOException {
-			super.ShowHome(e);   	
+			super.ShowHomeA(e);   	
 	}
 	@FXML
 		public void StockLimit(ActionEvent e) {

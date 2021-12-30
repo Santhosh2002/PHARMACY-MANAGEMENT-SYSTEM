@@ -32,7 +32,7 @@ import Pharmacist.*;
 import User.*;
 import javafx.scene.*;
 
-public class Controller extends Pharmacy{
+public class Controller extends PharmacyMain{
 	
 	@FXML
 	protected Label label;
@@ -65,7 +65,7 @@ public class Controller extends Pharmacy{
 	Pane view;
 	protected Connection con;
 	
-    protected void createconnection() {
+    public void createconnection() {
 	
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -80,28 +80,28 @@ public class Controller extends Pharmacy{
 	
 	
 	@FXML
-	private void ShowSignin(ActionEvent e) {
+	public void ShowSignin(ActionEvent e) {
 		
 		FxmlLoader object = new FxmlLoader();
 		view = object.getPage("Signin");
 		borderpane.setCenter(view);
 	}
 	@FXML
-	private void ShowSignup(ActionEvent e) {
+	public void ShowSignup(ActionEvent e) {
 		
 		FxmlLoader object = new FxmlLoader();
 		view = object.getPage("Signup");
 		borderpane.setCenter(view);
 	}
 	@FXML
-	private void ShowHome(ActionEvent e) {
+	public void ShowHome(ActionEvent e) {
 		
 		FxmlLoader object = new FxmlLoader();
 		view = object.getPage("Home");
 		borderpane.setCenter(view);
 	}
 	@FXML
-	private void ShowApply(ActionEvent e) {
+	public void ShowApply(ActionEvent e) {
 		
 		FxmlLoader object = new FxmlLoader();
 		view = object.getPage("Apply");
@@ -120,7 +120,7 @@ public class Controller extends Pharmacy{
 	}
 
 	@FXML
-	private void Signup(ActionEvent event) {
+	public void Signup(ActionEvent event) {
 		 createconnection();
 		 
 		 String val1 = F_name.getText();
@@ -331,7 +331,7 @@ public class Controller extends Pharmacy{
 //	}
 
 	@FXML
-	private void Signin(ActionEvent event) throws IOException {
+	public void Signin(ActionEvent event) throws IOException {
 		
 		createconnection();
 		
@@ -406,7 +406,7 @@ public class Controller extends Pharmacy{
 	}
 	
 	@FXML
-	private void ForgotPassword(ActionEvent event) {
+	public void ForgotPassword(ActionEvent event) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("Password.fxml"));
 			loader.load();
@@ -424,7 +424,7 @@ public class Controller extends Pharmacy{
 		}
 	}
 	@FXML
-	private void Next(ActionEvent event) {
+	public void Next(ActionEvent event) {
 		 createconnection();
 		 String val1 = F_name.getText();
 	     String val2 = L_name.getText();
@@ -485,6 +485,11 @@ public class Controller extends Pharmacy{
 		    	pause.play();
 	     }
 	}
+
+
+
+
+
 
 }
 

@@ -75,17 +75,17 @@
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="25.0" layoutY="265.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="265.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#dashboardPhar" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="DASHBOARD" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="318.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCKS" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="318.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Stocks" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="STOCKS" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="25.0" layoutY="371.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="SALES" textFill="WHITE">
+                  <Button layoutX="25.0" layoutY="371.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Sales" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #202020;" text="SALES" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="14.0" />
                      </font>

@@ -10,7 +10,7 @@ import javafx.fxml.FXML;
 public class UserController extends AdminController {
 	@FXML
     public void Logout(ActionEvent e) throws IOException {
-		super.ShowHome(e);   	
+		super.ShowHomeA(e);   	
 	}
 	@FXML
 	public void MyOrders(ActionEvent e) {
